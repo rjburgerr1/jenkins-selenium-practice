@@ -121,4 +121,47 @@ public class Practice {
         }
     }
 
+    /**
+     * Finds the clothing navbar by cssSelector
+     * @param driver
+     * @return
+     */
+    public WebElement getClothingNavbar(WebDriver driver) {
+
+        try {
+            WebElement navbarElement = driver.findElement(By.cssSelector("#block_top_menu > ul"));
+            return navbarElement;
+        } catch (Exception error) {
+            System.out.println(error.getCause());
+        }
+        return null;
+    }
+
+    /**
+     * Returns all the content contained in the clothing navbar
+     * @param driver
+     * @return
+     */
+    public WebElement[] getClothingNavbarContent(WebDriver driver) {
+
+        try {
+            WebElement navbarElement = driver.findElement(By.cssSelector("#block_top_menu > ul"));
+            WebElement[] navbarElementContent = navbarElement.findElements(By.tagName("li")).toArray(new WebElement[0]);
+
+            return navbarElementContent;
+        } catch (Exception error) {
+            System.out.println(error.getCause());
+        }
+        return null;
+    }
+
+
+
+
+
+
+
+
+
+
 }
