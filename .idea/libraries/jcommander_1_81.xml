@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="jcommander-1.81">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jcommander-1.81.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/testng-7.4.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../TestNGTest-backup" />
+      <root url="jar://$USER_HOME$/Desktop/jackson-databind-2.13.0-rc1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jackson-core-2.13.0-rc1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jackson-annotations-2.13.0-rc1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/java-json.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/client-combined-3.141.59.jar!/" />
+      <root url="file://$USER_HOME$/Desktop/Selenium Driver/libs" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/libs/byte-buddy-1.8.15.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/libs/commons-exec-1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/libs/guava-25.0-jre.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/libs/okhttp-3.11.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/libs/okio-1.14.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../TestNGTest-backup/src" />
+      <root url="jar://$USER_HOME$/Downloads/java-json.jar.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/java-json.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Selenium Driver/client-combined-3.141.59-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/Selenium Driver/libs" recursive="false" />
+  </library>
+</component>

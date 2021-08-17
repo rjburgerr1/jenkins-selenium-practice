@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jenkins-selenium-practice.iml" filepath="$PROJECT_DIR$/jenkins-selenium-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Selenium.iml" filepath="$PROJECT_DIR$/Selenium.iml" />
     </modules>
   </component>
 </project>
