@@ -155,6 +155,18 @@ public class Practice {
         return null;
     }
 
+    public WebElement getSearchBar(WebDriver driver) {
+
+        try {
+            WebElement searchbarElement = driver.findElement(By.id("search_query_top"));
+
+            return searchbarElement;
+        } catch (Exception error) {
+            System.out.println(error.getCause());
+        }
+        return null;
+    }
+
 
 
 

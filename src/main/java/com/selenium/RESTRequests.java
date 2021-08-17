@@ -42,7 +42,7 @@ public class RESTRequests {
      * Test for rapidapi.com's imdb API
      * Sends a GET request to rapidapi's auto-complete endpoint
      * This API gets auto-complete suggestions for a given search term
-     * Test PASSES if http response code of 2xx and resposne message is "OK", otherwise fails
+     * Test PASSES if http response code of 2xx and response message is "OK", otherwise fails
      *
      */
     @Test(groups = {"imdb", "positive-tests"})
@@ -83,7 +83,7 @@ public class RESTRequests {
     /**
      * Test for rapidapi.com's idmb API
      * This test builds an invalid GET request by passing incorrect credentials for signing into the imdb API
-     * Test PASSES if http response code of 403 is received and resposne message is 'Forbidden', otherwise fails
+     * Test PASSES if http response code of 403 is received and response message is 'Forbidden', otherwise fails
      *
      */
     @Test(groups = {"imdb", "negative-tests", "security-tests"})

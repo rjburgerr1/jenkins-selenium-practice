@@ -9,4 +9,5 @@
             <class name="com.selenium.Tests"/>
         </classes>
     </test>
+
 </suite> <!-- Suite -->

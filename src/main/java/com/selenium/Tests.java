@@ -28,7 +28,7 @@ public class Tests {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\RJ - Laptop\\Desktop\\Selenium Driver\\chromedriver.exe");
         // Instantiate headless chrome driver
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
         // Instantiate the practice class
         p1 = new Practice();
@@ -126,7 +126,8 @@ public class Tests {
             for (WebElement element : clothingNavbarContent) {
                 elementTexts.add(element.getText());
             }
-
+            // Enforces english
+            // hard asserts vs. soft asserts
             Assert.assertTrue(containsIgnoreCase(elementTexts, "dresses"));
             Assert.assertTrue(containsIgnoreCase(elementTexts, "t-shirts"));
             Assert.assertTrue(containsIgnoreCase(elementTexts, "women"));
@@ -135,9 +136,39 @@ public class Tests {
             System.out.println(error.getCause());
         }
 
+    }
 
-        // Pass test if the clothingNavbar element is a WebElement and not null
-       // Assert.assertTrue(clothingNavbar instanceof WebElement);
+    /**
+     * This tests the search bar's functionality at automationpractice.com
+     * Test passes if the search bar is filled with a search term "shirts" and the search button is pressed, and the page redirects
+     * to a search results page
+     */
+    public void searchBarTest() {
+            try {
+                // Navigate to automation site
+                driver.get("http://automationpractice.com/index.php");
+
+                Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                        .withTimeout(Duration.ofSeconds(10))
+                        .pollingEvery(Duration.ofSeconds(1))
+                        .ignoring(NoSuchElementException.class);
+
+
+                WebElement searchBarElement = wait.until(new Function<WebDriver, WebElement>() {
+                    @Override
+                    public WebElement apply(WebDriver driver) {
+                        return p1.getSearchBar(driver);
+                    }
+                });
+                searchBarElement.sendKeys("shirts");
+                searchBarElement.sendKeys(Keys.RETURN);
+
+                // Try soft asserts here as well
+                Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=shirts&submit_search=");
+
+            } catch (Exception error) {
+                System.out.println(error.getCause());
+            }
 
     }
 
