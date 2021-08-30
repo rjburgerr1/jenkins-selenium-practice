@@ -1,10 +1,10 @@
 package com.selenium;
 
-import com.sun.source.tree.AssertTree;
-import org.apache.openmeetings.util.stringhandlers.StringComparer;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
@@ -20,16 +20,25 @@ import java.util.function.Function;
 
 @Test
 public class Tests {
-    private ChromeDriver driver;
+    private ChromeDriver chromeDriver;
+    private FirefoxDriver driver;
     private Practice p1;
     @BeforeClass
     public void getDriver() {
         // Set system property for allowing use of chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\RJ - Laptop\\Desktop\\Selenium Driver\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\RJ - Laptop\\Desktop\\Selenium Driver\\chromedriver.exe");
+
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\rjbra\\Desktop\\Selenium Jars and Drivers\\Firefox Driver\\geckodriver.exe");
+
         // Instantiate headless chrome driver
-        ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+        //ChromeOptions options = new ChromeOptions();
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--headless");
+        // Create chrome driver with options
+        //driver = new ChromeDriver(options);
+        // create Firefox driver with option
+         driver = new FirefoxDriver(options);
+        driver.get("http://google.com");
         // Instantiate the practice class
         p1 = new Practice();
     }
