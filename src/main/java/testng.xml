@@ -10,4 +10,10 @@
         </classes>
     </test>
 
+    <test name="REST Tests">
+        <classes>
+            <class name="com.selenium.RESTRequests"/>
+        </classes>
+    </test>
+
 </suite> <!-- Suite -->

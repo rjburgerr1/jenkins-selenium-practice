@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.red5:red5-server:1.0.8-M12">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/red5/red5-server/1.0.8-M12/red5-server-1.0.8-M12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/red5/red5-server/1.0.8-M12/red5-server-1.0.8-M12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/red5/red5-server/1.0.8-M12/red5-server-1.0.8-M12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
